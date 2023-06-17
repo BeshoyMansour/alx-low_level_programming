@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/* more headers goes there */
+/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * This program checks whether an integer is negative, positive, or zero.
+ *
+ * Return: Always 0 (Success)
+ */
+/* betty style doc for function main goes there */
+int main(void)
+{
+int x;
+for (x = 0; x <= 9; x++)
+printf("%d", x);
+printf("\n");
+return (0);
+}
