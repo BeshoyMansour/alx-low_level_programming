@@ -14,12 +14,15 @@
 int main(void)
 {
 int x;
-for (x = 48; x < 57; x++)
+for (x = 48; x <= 57; x++)
 {
 putchar(x);
+if (x != 57)
+{
 putchar(',');
 putchar(' ');
 }
-putchar(57);
+}
+putchar('\n');
 return (0);
 }
