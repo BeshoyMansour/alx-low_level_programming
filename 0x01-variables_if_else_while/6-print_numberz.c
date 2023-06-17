@@ -13,8 +13,8 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-char x;
-for (x = '0'; x <= '9'; x++)
+int x;
+for (x = 48; x <= 57; x++)
 putchar(x);
 putchar('\n');
 return (0);
