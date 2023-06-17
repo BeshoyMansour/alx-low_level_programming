@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
@@ -17,14 +16,8 @@ int main(void)
 int n;
 int lastDigit;
 srand(time(0));
-n = rand() - RAND_MAX / 2;	
+n = rand() - RAND_MAX / 2;
 lastDigit = n % 10;
-
-if (lastDigit < 0)
-{
-lastDigit = lastDigit * -1;
-}
-
 if (lastDigit > 5)
 {
 printf("Last digit of %d is %d and is greater than 5\n", n, lastDigit);
