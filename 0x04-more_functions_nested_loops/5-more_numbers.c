@@ -5,21 +5,18 @@
  * 10 times.
  * Return: no return.
  */
-void print_most_numbers(void)
+void more_numbers(void)
 {
+	int i, ch;
 
-for (int n = 0; n < 10 ; n++)
-{
-for (int ch = 48 ; ch < 58 ; ch++)
-{
-_putchar(ch);
-}
-
-for (int x = 48 ; x < 52 ; x++)
-{
-_putchar(49);
-_putchar(x);
-}
-_putchar('\n');
-}
+	for (i = 0; i < 10; i++)
+	{
+		for (ch = 0; ch < 15; ch++)
+		{
+			if (ch >= 10)
+				_putchar((ch / 10) + 48);
+			_putchar((ch % 10) + 48);
+		}
+		_putchar('\n');
+	}
 }
