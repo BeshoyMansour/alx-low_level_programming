@@ -13,12 +13,13 @@ size_t i = 0;
 
 while (h)
 {
-if (h->str)
-printf("[%d] %s \n", h->len, h->str);
+if ((h->str)!=NULL)
+printf("[%lu] %s\n", h->len, h->str);
 else
 printf("[0] (nil)\n");
 h = h->next;
 i++;
 }
+
 return (i);
 }
