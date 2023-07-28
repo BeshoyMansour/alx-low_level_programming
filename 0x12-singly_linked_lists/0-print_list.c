@@ -18,7 +18,7 @@ printf("[%u] %s\n", h->len, h->str);
 else
 printf("[0] (nil)\n");
 h = h->next;
-i->len++;
+i++;
 }
 return (i);
 }
